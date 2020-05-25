@@ -1,0 +1,30 @@
+#!/bin/sh
+#source ~/.bashrc
+##source ../../../tfenv/bin/activate
+source activate /data2/timmyqiu/env
+
+min="20190612"
+max="20190614"
+
+traindir="/data4/janusyang/KG/Anchor/WideAndDeep"
+
+#for dir in `ls /data4/timmyqiu/qmkg/TensorFlowRec/LearningTools/Projects/Anchor/tfrecords/`
+for dir in `ls /data4/janusyang/KG/Anchor/WideAndDeep/tfrecords/`
+do
+  #echo $dir
+  if [[ $dir = [0-9][0-9]* ]]; then
+  #if [[ $dir = 201906[2-3][0-9] ]]; then
+    if [ $dir -ge $min ]; then
+      if [ $dir -le $max ]; then
+        echo $dir
+        echo `date`
+        echo "start train: $traindir/tfrecords/$dir"
+        echo "-------------------------"
+        #此处训练是选择最后一天的作为测试--dev参数，之前的作为训练--train参数 
+        #source activate /data2/timmyqiu/env &&  python ./dw_train_weight.py --conf dw_conf.ini --train $traindir/tfrecords/$dir/train/ --dev $traindir/tfrecords/$max/test/ 
+        #lr
+        source activate /data2/timmyqiu/env &&  python ./dw_train_weight_v3.py --conf dw_conf_v4.ini --train $traindir/tfrecprds0330//train/ --dev $traindir/tfrecprds0330/test/ 
+      fi
+    fi
+  fi
+done

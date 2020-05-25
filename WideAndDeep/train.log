@@ -1,0 +1,897 @@
+2020-04-14 18:43:27,607 train directory: /data4/janusyang/KG/Anchor/WideAndDeep/tf20200328/train/
+2020-04-14 18:43:27,608 train files: ['/data4/janus.../part-r-00156', '/data4/janus.../part-r-00128', '/data4/janus.../part-r-00174', '/data4/janus.../part-r-00057', '/data4/janus.../part-r-00083', '/data4/janus.../part-r-00135', ...]
+2020-04-14 18:43:27,623 dev directory: /data4/janusyang/KG/Anchor/WideAndDeep/tf20200328/test/
+2020-04-14 18:43:27,623 dev files: ['/data4/janus.../part-r-00156', '/data4/janus.../part-r-00128', '/data4/janus.../part-r-00174', '/data4/janus.../part-r-00057', '/data4/janus.../part-r-00083', '/data4/janus.../part-r-00135', ...]
+WARNING:tensorflow:From tftools/FCGen/Generator.py:202: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+2020-04-14 18:43:28,038 From tftools/FCGen/Generator.py:202: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+2020-04-14 18:43:28,041 Creating model...
+INFO:tensorflow:Using config: {'_model_dir': 'dw_model_entertainment_live', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f0d9cd31828>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-04-14 18:43:28,042 Using config: {'_model_dir': 'dw_model_entertainment_live', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f0d9cd31828>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-04-14 18:43:28,043 training...
+INFO:tensorflow:Calling model_fn.
+2020-04-14 18:43:29,643 Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+2020-04-14 18:44:36,181 Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+2020-04-14 18:44:36,182 Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+2020-04-14 18:44:55,404 Graph was finalized.
+2020-04-14 18:44:56.219121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:0e:00.0
+totalMemory: 22.38GiB freeMemory: 22.21GiB
+2020-04-14 18:44:56.219182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-04-14 18:44:57.233479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-14 18:44:57.233573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-04-14 18:44:57.233587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-04-14 18:44:57.236372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21544 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:0e:00.0, compute capability: 6.1)
+2020-04-14 18:45:00.212201: W tensorflow/core/framework/allocator.cc:108] Allocation of 960000000 exceeds 10% of system memory.
+2020-04-14 18:45:02.310919: W tensorflow/core/framework/allocator.cc:108] Allocation of 960000000 exceeds 10% of system memory.
+2020-04-14 18:45:03.905643: W tensorflow/core/framework/allocator.cc:108] Allocation of 960000000 exceeds 10% of system memory.
+2020-04-14 18:45:04.978669: W tensorflow/core/framework/allocator.cc:108] Allocation of 960000000 exceeds 10% of system memory.
+2020-04-14 18:45:08.367931: W tensorflow/core/framework/allocator.cc:108] Allocation of 960000000 exceeds 10% of system memory.
+INFO:tensorflow:Running local_init_op.
+2020-04-14 18:45:33,182 Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2020-04-14 18:45:37,642 Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 18:46:20,176 Saving checkpoints for 0 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 18:47:52.060423: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:97] Filling up shuffle buffer (this may take a while): 439633 of 512000
+2020-04-14 18:47:53.813733: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:135] Shuffle buffer filled.
+INFO:tensorflow:loss = 0.9060644, step = 0
+2020-04-14 18:47:54,282 loss = 0.9060644, step = 0
+INFO:tensorflow:global_step/sec: 1.1265
+2020-04-14 18:49:23,052 global_step/sec: 1.1265
+INFO:tensorflow:loss = 0.16749841, step = 100 (88.772 sec)
+2020-04-14 18:49:23,055 loss = 0.16749841, step = 100 (88.772 sec)
+INFO:tensorflow:global_step/sec: 3.18073
+2020-04-14 18:49:54,491 global_step/sec: 3.18073
+INFO:tensorflow:loss = 0.21628162, step = 200 (31.438 sec)
+2020-04-14 18:49:54,493 loss = 0.21628162, step = 200 (31.438 sec)
+INFO:tensorflow:global_step/sec: 3.14561
+2020-04-14 18:50:26,282 global_step/sec: 3.14561
+INFO:tensorflow:loss = 0.27352592, step = 300 (31.793 sec)
+2020-04-14 18:50:26,285 loss = 0.27352592, step = 300 (31.793 sec)
+INFO:tensorflow:global_step/sec: 3.38766
+2020-04-14 18:50:55,801 global_step/sec: 3.38766
+INFO:tensorflow:loss = 0.2437785, step = 400 (29.517 sec)
+2020-04-14 18:50:55,802 loss = 0.2437785, step = 400 (29.517 sec)
+INFO:tensorflow:global_step/sec: 3.33315
+2020-04-14 18:51:25,802 global_step/sec: 3.33315
+INFO:tensorflow:loss = 0.23074968, step = 500 (30.002 sec)
+2020-04-14 18:51:25,804 loss = 0.23074968, step = 500 (30.002 sec)
+INFO:tensorflow:global_step/sec: 3.31621
+2020-04-14 18:51:55,957 global_step/sec: 3.31621
+INFO:tensorflow:loss = 0.21894446, step = 600 (30.155 sec)
+2020-04-14 18:51:55,959 loss = 0.21894446, step = 600 (30.155 sec)
+INFO:tensorflow:global_step/sec: 3.10274
+2020-04-14 18:52:28,187 global_step/sec: 3.10274
+INFO:tensorflow:loss = 0.18986768, step = 700 (32.229 sec)
+2020-04-14 18:52:28,188 loss = 0.18986768, step = 700 (32.229 sec)
+INFO:tensorflow:global_step/sec: 3.26266
+2020-04-14 18:52:58,837 global_step/sec: 3.26266
+INFO:tensorflow:loss = 0.20581076, step = 800 (30.650 sec)
+2020-04-14 18:52:58,838 loss = 0.20581076, step = 800 (30.650 sec)
+INFO:tensorflow:global_step/sec: 3.06926
+2020-04-14 18:53:31,418 global_step/sec: 3.06926
+INFO:tensorflow:loss = 0.20893002, step = 900 (32.584 sec)
+2020-04-14 18:53:31,422 loss = 0.20893002, step = 900 (32.584 sec)
+INFO:tensorflow:global_step/sec: 3.17154
+2020-04-14 18:54:02,948 global_step/sec: 3.17154
+INFO:tensorflow:loss = 0.2397078, step = 1000 (31.528 sec)
+2020-04-14 18:54:02,950 loss = 0.2397078, step = 1000 (31.528 sec)
+INFO:tensorflow:global_step/sec: 3.12177
+2020-04-14 18:54:34,981 global_step/sec: 3.12177
+INFO:tensorflow:loss = 0.20681597, step = 1100 (32.033 sec)
+2020-04-14 18:54:34,983 loss = 0.20681597, step = 1100 (32.033 sec)
+INFO:tensorflow:global_step/sec: 3.25994
+2020-04-14 18:55:05,657 global_step/sec: 3.25994
+INFO:tensorflow:loss = 0.25634637, step = 1200 (30.674 sec)
+2020-04-14 18:55:05,658 loss = 0.25634637, step = 1200 (30.674 sec)
+INFO:tensorflow:global_step/sec: 3.33264
+2020-04-14 18:55:35,663 global_step/sec: 3.33264
+INFO:tensorflow:loss = 0.21804702, step = 1300 (30.007 sec)
+2020-04-14 18:55:35,665 loss = 0.21804702, step = 1300 (30.007 sec)
+INFO:tensorflow:global_step/sec: 3.35331
+2020-04-14 18:56:05,484 global_step/sec: 3.35331
+INFO:tensorflow:loss = 0.31163454, step = 1400 (29.822 sec)
+2020-04-14 18:56:05,488 loss = 0.31163454, step = 1400 (29.822 sec)
+INFO:tensorflow:global_step/sec: 3.25543
+2020-04-14 18:56:36,202 global_step/sec: 3.25543
+INFO:tensorflow:loss = 0.2107089, step = 1500 (30.717 sec)
+2020-04-14 18:56:36,204 loss = 0.2107089, step = 1500 (30.717 sec)
+INFO:tensorflow:Saving checkpoints for 1527 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 18:56:43,661 Saving checkpoints for 1527 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.97021
+2020-04-14 18:57:26,958 global_step/sec: 1.97021
+INFO:tensorflow:loss = 0.28428182, step = 1600 (50.755 sec)
+2020-04-14 18:57:26,960 loss = 0.28428182, step = 1600 (50.755 sec)
+INFO:tensorflow:global_step/sec: 3.27033
+2020-04-14 18:57:57,536 global_step/sec: 3.27033
+INFO:tensorflow:loss = 0.259353, step = 1700 (30.580 sec)
+2020-04-14 18:57:57,540 loss = 0.259353, step = 1700 (30.580 sec)
+INFO:tensorflow:global_step/sec: 3.15771
+2020-04-14 18:58:29,205 global_step/sec: 3.15771
+INFO:tensorflow:loss = 0.21004917, step = 1800 (31.666 sec)
+2020-04-14 18:58:29,206 loss = 0.21004917, step = 1800 (31.666 sec)
+INFO:tensorflow:global_step/sec: 3.21342
+2020-04-14 18:59:00,324 global_step/sec: 3.21342
+INFO:tensorflow:loss = 0.21118397, step = 1900 (31.120 sec)
+2020-04-14 18:59:00,325 loss = 0.21118397, step = 1900 (31.120 sec)
+INFO:tensorflow:global_step/sec: 3.34084
+2020-04-14 18:59:30,257 global_step/sec: 3.34084
+INFO:tensorflow:loss = 0.21878397, step = 2000 (29.933 sec)
+2020-04-14 18:59:30,258 loss = 0.21878397, step = 2000 (29.933 sec)
+INFO:tensorflow:global_step/sec: 3.18375
+2020-04-14 19:00:01,666 global_step/sec: 3.18375
+INFO:tensorflow:loss = 0.19333063, step = 2100 (31.411 sec)
+2020-04-14 19:00:01,669 loss = 0.19333063, step = 2100 (31.411 sec)
+INFO:tensorflow:global_step/sec: 3.23534
+2020-04-14 19:00:32,575 global_step/sec: 3.23534
+INFO:tensorflow:loss = 0.2934906, step = 2200 (30.908 sec)
+2020-04-14 19:00:32,577 loss = 0.2934906, step = 2200 (30.908 sec)
+INFO:tensorflow:global_step/sec: 3.229
+2020-04-14 19:01:03,544 global_step/sec: 3.229
+INFO:tensorflow:loss = 0.1963241, step = 2300 (30.969 sec)
+2020-04-14 19:01:03,546 loss = 0.1963241, step = 2300 (30.969 sec)
+INFO:tensorflow:global_step/sec: 3.25477
+2020-04-14 19:01:34,268 global_step/sec: 3.25477
+INFO:tensorflow:loss = 0.24183932, step = 2400 (30.724 sec)
+2020-04-14 19:01:34,270 loss = 0.24183932, step = 2400 (30.724 sec)
+INFO:tensorflow:global_step/sec: 3.18932
+2020-04-14 19:02:05,623 global_step/sec: 3.18932
+INFO:tensorflow:loss = 0.20637126, step = 2500 (31.357 sec)
+2020-04-14 19:02:05,627 loss = 0.20637126, step = 2500 (31.357 sec)
+INFO:tensorflow:global_step/sec: 3.11776
+2020-04-14 19:02:37,697 global_step/sec: 3.11776
+INFO:tensorflow:loss = 0.23816663, step = 2600 (32.072 sec)
+2020-04-14 19:02:37,699 loss = 0.23816663, step = 2600 (32.072 sec)
+INFO:tensorflow:global_step/sec: 3.43071
+2020-04-14 19:03:06,846 global_step/sec: 3.43071
+INFO:tensorflow:loss = 0.24078217, step = 2700 (29.150 sec)
+2020-04-14 19:03:06,848 loss = 0.24078217, step = 2700 (29.150 sec)
+INFO:tensorflow:global_step/sec: 3.79478
+2020-04-14 19:03:33,198 global_step/sec: 3.79478
+INFO:tensorflow:loss = 0.24071166, step = 2800 (26.351 sec)
+2020-04-14 19:03:33,199 loss = 0.24071166, step = 2800 (26.351 sec)
+INFO:tensorflow:global_step/sec: 3.59968
+2020-04-14 19:04:00,978 global_step/sec: 3.59968
+INFO:tensorflow:loss = 0.17709568, step = 2900 (27.781 sec)
+2020-04-14 19:04:00,981 loss = 0.17709568, step = 2900 (27.781 sec)
+INFO:tensorflow:global_step/sec: 3.63231
+2020-04-14 19:04:28,509 global_step/sec: 3.63231
+INFO:tensorflow:loss = 0.19010243, step = 3000 (27.530 sec)
+2020-04-14 19:04:28,511 loss = 0.19010243, step = 3000 (27.530 sec)
+INFO:tensorflow:global_step/sec: 3.78567
+2020-04-14 19:04:54,924 global_step/sec: 3.78567
+INFO:tensorflow:loss = 0.30636668, step = 3100 (26.414 sec)
+2020-04-14 19:04:54,925 loss = 0.30636668, step = 3100 (26.414 sec)
+INFO:tensorflow:global_step/sec: 3.46085
+2020-04-14 19:05:23,819 global_step/sec: 3.46085
+INFO:tensorflow:loss = 0.22950925, step = 3200 (28.894 sec)
+2020-04-14 19:05:23,820 loss = 0.22950925, step = 3200 (28.894 sec)
+INFO:tensorflow:global_step/sec: 3.42211
+2020-04-14 19:05:53,040 global_step/sec: 3.42211
+INFO:tensorflow:loss = 0.22791404, step = 3300 (29.222 sec)
+2020-04-14 19:05:53,042 loss = 0.22791404, step = 3300 (29.222 sec)
+INFO:tensorflow:global_step/sec: 3.60839
+2020-04-14 19:06:20,754 global_step/sec: 3.60839
+INFO:tensorflow:loss = 0.3090852, step = 3400 (27.713 sec)
+2020-04-14 19:06:20,755 loss = 0.3090852, step = 3400 (27.713 sec)
+INFO:tensorflow:Saving checkpoints for 3484 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:06:43,818 Saving checkpoints for 3484 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.13445
+2020-04-14 19:07:07,604 global_step/sec: 2.13445
+INFO:tensorflow:loss = 0.28476647, step = 3500 (46.850 sec)
+2020-04-14 19:07:07,605 loss = 0.28476647, step = 3500 (46.850 sec)
+INFO:tensorflow:global_step/sec: 3.57277
+2020-04-14 19:07:35,593 global_step/sec: 3.57277
+INFO:tensorflow:loss = 0.26252347, step = 3600 (27.990 sec)
+2020-04-14 19:07:35,595 loss = 0.26252347, step = 3600 (27.990 sec)
+INFO:tensorflow:global_step/sec: 3.87487
+2020-04-14 19:08:01,401 global_step/sec: 3.87487
+INFO:tensorflow:loss = 0.2529981, step = 3700 (25.807 sec)
+2020-04-14 19:08:01,402 loss = 0.2529981, step = 3700 (25.807 sec)
+INFO:tensorflow:global_step/sec: 4.23548
+2020-04-14 19:08:25,011 global_step/sec: 4.23548
+INFO:tensorflow:loss = 0.19406135, step = 3800 (23.610 sec)
+2020-04-14 19:08:25,012 loss = 0.19406135, step = 3800 (23.610 sec)
+INFO:tensorflow:global_step/sec: 4.40384
+2020-04-14 19:08:47,718 global_step/sec: 4.40384
+INFO:tensorflow:loss = 0.21859574, step = 3900 (22.709 sec)
+2020-04-14 19:08:47,720 loss = 0.21859574, step = 3900 (22.709 sec)
+INFO:tensorflow:global_step/sec: 3.78941
+2020-04-14 19:09:14,108 global_step/sec: 3.78941
+INFO:tensorflow:loss = 0.2291119, step = 4000 (26.390 sec)
+2020-04-14 19:09:14,111 loss = 0.2291119, step = 4000 (26.390 sec)
+INFO:tensorflow:global_step/sec: 4.32009
+2020-04-14 19:09:37,255 global_step/sec: 4.32009
+INFO:tensorflow:loss = 0.23248085, step = 4100 (23.146 sec)
+2020-04-14 19:09:37,257 loss = 0.23248085, step = 4100 (23.146 sec)
+INFO:tensorflow:global_step/sec: 4.18668
+2020-04-14 19:10:01,141 global_step/sec: 4.18668
+INFO:tensorflow:loss = 0.20812112, step = 4200 (23.885 sec)
+2020-04-14 19:10:01,142 loss = 0.20812112, step = 4200 (23.885 sec)
+INFO:tensorflow:global_step/sec: 3.39727
+2020-04-14 19:10:30,576 global_step/sec: 3.39727
+INFO:tensorflow:loss = 0.20458494, step = 4300 (29.435 sec)
+2020-04-14 19:10:30,578 loss = 0.20458494, step = 4300 (29.435 sec)
+INFO:tensorflow:global_step/sec: 3.9483
+2020-04-14 19:10:55,903 global_step/sec: 3.9483
+INFO:tensorflow:loss = 0.22565174, step = 4400 (25.327 sec)
+2020-04-14 19:10:55,904 loss = 0.22565174, step = 4400 (25.327 sec)
+INFO:tensorflow:global_step/sec: 4.04565
+2020-04-14 19:11:20,621 global_step/sec: 4.04565
+INFO:tensorflow:loss = 0.28724787, step = 4500 (24.722 sec)
+2020-04-14 19:11:20,626 loss = 0.28724787, step = 4500 (24.722 sec)
+INFO:tensorflow:global_step/sec: 4.09449
+2020-04-14 19:11:45,045 global_step/sec: 4.09449
+INFO:tensorflow:loss = 0.257891, step = 4600 (24.422 sec)
+2020-04-14 19:11:45,048 loss = 0.257891, step = 4600 (24.422 sec)
+INFO:tensorflow:global_step/sec: 3.80425
+2020-04-14 19:12:11,331 global_step/sec: 3.80425
+INFO:tensorflow:loss = 0.1995917, step = 4700 (26.285 sec)
+2020-04-14 19:12:11,332 loss = 0.1995917, step = 4700 (26.285 sec)
+INFO:tensorflow:global_step/sec: 3.68427
+2020-04-14 19:12:38,473 global_step/sec: 3.68427
+INFO:tensorflow:loss = 0.2291952, step = 4800 (27.142 sec)
+2020-04-14 19:12:38,474 loss = 0.2291952, step = 4800 (27.142 sec)
+INFO:tensorflow:global_step/sec: 3.58231
+2020-04-14 19:13:06,388 global_step/sec: 3.58231
+INFO:tensorflow:loss = 0.19586527, step = 4900 (27.918 sec)
+2020-04-14 19:13:06,392 loss = 0.19586527, step = 4900 (27.918 sec)
+INFO:tensorflow:global_step/sec: 4.15009
+2020-04-14 19:13:30,484 global_step/sec: 4.15009
+INFO:tensorflow:loss = 0.1940566, step = 5000 (24.096 sec)
+2020-04-14 19:13:30,488 loss = 0.1940566, step = 5000 (24.096 sec)
+INFO:tensorflow:global_step/sec: 3.48085
+2020-04-14 19:13:59,213 global_step/sec: 3.48085
+INFO:tensorflow:loss = 0.21926491, step = 5100 (28.726 sec)
+2020-04-14 19:13:59,214 loss = 0.21926491, step = 5100 (28.726 sec)
+INFO:tensorflow:global_step/sec: 3.57268
+2020-04-14 19:14:27,203 global_step/sec: 3.57268
+INFO:tensorflow:loss = 0.2220338, step = 5200 (27.990 sec)
+2020-04-14 19:14:27,204 loss = 0.2220338, step = 5200 (27.990 sec)
+INFO:tensorflow:global_step/sec: 3.55423
+2020-04-14 19:14:55,338 global_step/sec: 3.55423
+INFO:tensorflow:loss = 0.28541708, step = 5300 (28.136 sec)
+2020-04-14 19:14:55,340 loss = 0.28541708, step = 5300 (28.136 sec)
+INFO:tensorflow:global_step/sec: 3.66124
+2020-04-14 19:15:22,652 global_step/sec: 3.66124
+INFO:tensorflow:loss = 0.20742866, step = 5400 (27.313 sec)
+2020-04-14 19:15:22,653 loss = 0.20742866, step = 5400 (27.313 sec)
+INFO:tensorflow:global_step/sec: 3.66145
+2020-04-14 19:15:49,963 global_step/sec: 3.66145
+INFO:tensorflow:loss = 0.21309981, step = 5500 (27.312 sec)
+2020-04-14 19:15:49,965 loss = 0.21309981, step = 5500 (27.312 sec)
+INFO:tensorflow:global_step/sec: 3.59792
+2020-04-14 19:16:17,757 global_step/sec: 3.59792
+INFO:tensorflow:loss = 0.20938316, step = 5600 (27.793 sec)
+2020-04-14 19:16:17,758 loss = 0.20938316, step = 5600 (27.793 sec)
+INFO:tensorflow:Saving checkpoints for 5699 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:16:44,001 Saving checkpoints for 5699 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.24625
+2020-04-14 19:17:02,276 global_step/sec: 2.24625
+INFO:tensorflow:loss = 0.18491055, step = 5700 (44.518 sec)
+2020-04-14 19:17:02,277 loss = 0.18491055, step = 5700 (44.518 sec)
+INFO:tensorflow:global_step/sec: 3.36109
+2020-04-14 19:17:32,028 global_step/sec: 3.36109
+INFO:tensorflow:loss = 0.20570645, step = 5800 (29.752 sec)
+2020-04-14 19:17:32,029 loss = 0.20570645, step = 5800 (29.752 sec)
+INFO:tensorflow:global_step/sec: 3.66733
+2020-04-14 19:17:59,296 global_step/sec: 3.66733
+INFO:tensorflow:loss = 0.18899816, step = 5900 (27.269 sec)
+2020-04-14 19:17:59,298 loss = 0.18899816, step = 5900 (27.269 sec)
+INFO:tensorflow:global_step/sec: 3.59236
+2020-04-14 19:18:27,132 global_step/sec: 3.59236
+INFO:tensorflow:loss = 0.2046908, step = 6000 (27.836 sec)
+2020-04-14 19:18:27,134 loss = 0.2046908, step = 6000 (27.836 sec)
+INFO:tensorflow:global_step/sec: 3.72258
+2020-04-14 19:18:53,996 global_step/sec: 3.72258
+INFO:tensorflow:loss = 0.26180854, step = 6100 (26.863 sec)
+2020-04-14 19:18:53,997 loss = 0.26180854, step = 6100 (26.863 sec)
+INFO:tensorflow:global_step/sec: 3.69596
+2020-04-14 19:19:21,052 global_step/sec: 3.69596
+INFO:tensorflow:loss = 0.2586919, step = 6200 (27.056 sec)
+2020-04-14 19:19:21,053 loss = 0.2586919, step = 6200 (27.056 sec)
+INFO:tensorflow:global_step/sec: 3.79502
+2020-04-14 19:19:47,402 global_step/sec: 3.79502
+INFO:tensorflow:loss = 0.22758421, step = 6300 (26.350 sec)
+2020-04-14 19:19:47,404 loss = 0.22758421, step = 6300 (26.350 sec)
+INFO:tensorflow:global_step/sec: 3.8155
+2020-04-14 19:20:13,611 global_step/sec: 3.8155
+INFO:tensorflow:loss = 0.18351455, step = 6400 (26.210 sec)
+2020-04-14 19:20:13,613 loss = 0.18351455, step = 6400 (26.210 sec)
+INFO:tensorflow:global_step/sec: 3.61949
+2020-04-14 19:20:41,240 global_step/sec: 3.61949
+INFO:tensorflow:loss = 0.2512393, step = 6500 (27.628 sec)
+2020-04-14 19:20:41,241 loss = 0.2512393, step = 6500 (27.628 sec)
+INFO:tensorflow:global_step/sec: 3.55104
+2020-04-14 19:21:09,400 global_step/sec: 3.55104
+INFO:tensorflow:loss = 0.22712317, step = 6600 (28.161 sec)
+2020-04-14 19:21:09,402 loss = 0.22712317, step = 6600 (28.161 sec)
+INFO:tensorflow:global_step/sec: 3.51415
+2020-04-14 19:21:37,857 global_step/sec: 3.51415
+INFO:tensorflow:loss = 0.23409358, step = 6700 (28.456 sec)
+2020-04-14 19:21:37,858 loss = 0.23409358, step = 6700 (28.456 sec)
+INFO:tensorflow:global_step/sec: 3.34766
+2020-04-14 19:22:07,728 global_step/sec: 3.34766
+INFO:tensorflow:loss = 0.28060204, step = 6800 (29.872 sec)
+2020-04-14 19:22:07,730 loss = 0.28060204, step = 6800 (29.872 sec)
+INFO:tensorflow:global_step/sec: 3.68446
+2020-04-14 19:22:34,869 global_step/sec: 3.68446
+INFO:tensorflow:loss = 0.24904837, step = 6900 (27.142 sec)
+2020-04-14 19:22:34,872 loss = 0.24904837, step = 6900 (27.142 sec)
+INFO:tensorflow:global_step/sec: 3.43418
+2020-04-14 19:23:03,988 global_step/sec: 3.43418
+INFO:tensorflow:loss = 0.2436417, step = 7000 (29.119 sec)
+2020-04-14 19:23:03,991 loss = 0.2436417, step = 7000 (29.119 sec)
+INFO:tensorflow:global_step/sec: 3.53759
+2020-04-14 19:23:32,256 global_step/sec: 3.53759
+INFO:tensorflow:loss = 0.25143635, step = 7100 (28.269 sec)
+2020-04-14 19:23:32,259 loss = 0.25143635, step = 7100 (28.269 sec)
+INFO:tensorflow:global_step/sec: 3.44846
+2020-04-14 19:24:01,255 global_step/sec: 3.44846
+INFO:tensorflow:loss = 0.20268956, step = 7200 (28.996 sec)
+2020-04-14 19:24:01,256 loss = 0.20268956, step = 7200 (28.996 sec)
+INFO:tensorflow:global_step/sec: 3.39953
+2020-04-14 19:24:30,670 global_step/sec: 3.39953
+INFO:tensorflow:loss = 0.20918651, step = 7300 (29.416 sec)
+2020-04-14 19:24:30,672 loss = 0.20918651, step = 7300 (29.416 sec)
+INFO:tensorflow:global_step/sec: 3.51751
+2020-04-14 19:24:59,100 global_step/sec: 3.51751
+INFO:tensorflow:loss = 0.19385079, step = 7400 (28.431 sec)
+2020-04-14 19:24:59,103 loss = 0.19385079, step = 7400 (28.431 sec)
+INFO:tensorflow:global_step/sec: 3.25794
+2020-04-14 19:25:29,794 global_step/sec: 3.25794
+INFO:tensorflow:loss = 0.21997187, step = 7500 (30.693 sec)
+2020-04-14 19:25:29,796 loss = 0.21997187, step = 7500 (30.693 sec)
+INFO:tensorflow:global_step/sec: 3.4339
+2020-04-14 19:25:58,915 global_step/sec: 3.4339
+INFO:tensorflow:loss = 0.20136711, step = 7600 (29.121 sec)
+2020-04-14 19:25:58,916 loss = 0.20136711, step = 7600 (29.121 sec)
+INFO:tensorflow:global_step/sec: 3.45322
+2020-04-14 19:26:27,874 global_step/sec: 3.45322
+INFO:tensorflow:loss = 0.20519935, step = 7700 (28.959 sec)
+2020-04-14 19:26:27,875 loss = 0.20519935, step = 7700 (28.959 sec)
+INFO:tensorflow:Saving checkpoints for 7757 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:26:44,257 Saving checkpoints for 7757 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.04485
+2020-04-14 19:27:16,777 global_step/sec: 2.04485
+INFO:tensorflow:loss = 0.27184084, step = 7800 (48.904 sec)
+2020-04-14 19:27:16,779 loss = 0.27184084, step = 7800 (48.904 sec)
+INFO:tensorflow:global_step/sec: 3.43277
+2020-04-14 19:27:45,908 global_step/sec: 3.43277
+INFO:tensorflow:loss = 0.18522933, step = 7900 (29.131 sec)
+2020-04-14 19:27:45,910 loss = 0.18522933, step = 7900 (29.131 sec)
+INFO:tensorflow:global_step/sec: 3.44802
+2020-04-14 19:28:14,910 global_step/sec: 3.44802
+INFO:tensorflow:loss = 0.2534811, step = 8000 (29.011 sec)
+2020-04-14 19:28:14,921 loss = 0.2534811, step = 8000 (29.011 sec)
+INFO:tensorflow:global_step/sec: 3.33055
+2020-04-14 19:28:44,935 global_step/sec: 3.33055
+INFO:tensorflow:loss = 0.22155792, step = 8100 (30.026 sec)
+2020-04-14 19:28:44,947 loss = 0.22155792, step = 8100 (30.026 sec)
+INFO:tensorflow:global_step/sec: 3.42678
+2020-04-14 19:29:14,117 global_step/sec: 3.42678
+INFO:tensorflow:loss = 0.21281362, step = 8200 (29.173 sec)
+2020-04-14 19:29:14,121 loss = 0.21281362, step = 8200 (29.173 sec)
+INFO:tensorflow:global_step/sec: 3.42893
+2020-04-14 19:29:43,281 global_step/sec: 3.42893
+INFO:tensorflow:loss = 0.24793655, step = 8300 (29.161 sec)
+2020-04-14 19:29:43,282 loss = 0.24793655, step = 8300 (29.161 sec)
+INFO:tensorflow:global_step/sec: 3.59833
+2020-04-14 19:30:11,072 global_step/sec: 3.59833
+INFO:tensorflow:loss = 0.24351369, step = 8400 (27.791 sec)
+2020-04-14 19:30:11,073 loss = 0.24351369, step = 8400 (27.791 sec)
+INFO:tensorflow:global_step/sec: 3.60609
+2020-04-14 19:30:38,802 global_step/sec: 3.60609
+INFO:tensorflow:loss = 0.27393004, step = 8500 (27.731 sec)
+2020-04-14 19:30:38,804 loss = 0.27393004, step = 8500 (27.731 sec)
+INFO:tensorflow:global_step/sec: 3.52216
+2020-04-14 19:31:07,194 global_step/sec: 3.52216
+INFO:tensorflow:loss = 0.2660785, step = 8600 (28.392 sec)
+2020-04-14 19:31:07,195 loss = 0.2660785, step = 8600 (28.392 sec)
+INFO:tensorflow:global_step/sec: 3.51761
+2020-04-14 19:31:35,623 global_step/sec: 3.51761
+INFO:tensorflow:loss = 0.16993122, step = 8700 (28.429 sec)
+2020-04-14 19:31:35,625 loss = 0.16993122, step = 8700 (28.429 sec)
+INFO:tensorflow:global_step/sec: 3.4506
+2020-04-14 19:32:04,603 global_step/sec: 3.4506
+INFO:tensorflow:loss = 0.24402082, step = 8800 (28.979 sec)
+2020-04-14 19:32:04,604 loss = 0.24402082, step = 8800 (28.979 sec)
+INFO:tensorflow:global_step/sec: 3.488
+2020-04-14 19:32:33,273 global_step/sec: 3.488
+INFO:tensorflow:loss = 0.27172807, step = 8900 (28.670 sec)
+2020-04-14 19:32:33,274 loss = 0.27172807, step = 8900 (28.670 sec)
+INFO:tensorflow:global_step/sec: 3.64083
+2020-04-14 19:33:00,739 global_step/sec: 3.64083
+INFO:tensorflow:loss = 0.20459077, step = 9000 (27.466 sec)
+2020-04-14 19:33:00,741 loss = 0.20459077, step = 9000 (27.466 sec)
+INFO:tensorflow:global_step/sec: 3.62081
+2020-04-14 19:33:28,357 global_step/sec: 3.62081
+INFO:tensorflow:loss = 0.23960395, step = 9100 (27.625 sec)
+2020-04-14 19:33:28,366 loss = 0.23960395, step = 9100 (27.625 sec)
+INFO:tensorflow:global_step/sec: 3.61923
+2020-04-14 19:33:55,987 global_step/sec: 3.61923
+INFO:tensorflow:loss = 0.202012, step = 9200 (27.624 sec)
+2020-04-14 19:33:55,989 loss = 0.202012, step = 9200 (27.624 sec)
+INFO:tensorflow:global_step/sec: 3.55206
+2020-04-14 19:34:24,140 global_step/sec: 3.55206
+INFO:tensorflow:loss = 0.2177886, step = 9300 (28.152 sec)
+2020-04-14 19:34:24,141 loss = 0.2177886, step = 9300 (28.152 sec)
+INFO:tensorflow:global_step/sec: 3.66891
+2020-04-14 19:34:51,396 global_step/sec: 3.66891
+INFO:tensorflow:loss = 0.22510909, step = 9400 (27.256 sec)
+2020-04-14 19:34:51,397 loss = 0.22510909, step = 9400 (27.256 sec)
+INFO:tensorflow:global_step/sec: 3.6973
+2020-04-14 19:35:18,443 global_step/sec: 3.6973
+INFO:tensorflow:loss = 0.20831504, step = 9500 (27.047 sec)
+2020-04-14 19:35:18,444 loss = 0.20831504, step = 9500 (27.047 sec)
+INFO:tensorflow:global_step/sec: 3.68607
+2020-04-14 19:35:45,572 global_step/sec: 3.68607
+INFO:tensorflow:loss = 0.25680155, step = 9600 (27.130 sec)
+2020-04-14 19:35:45,574 loss = 0.25680155, step = 9600 (27.130 sec)
+INFO:tensorflow:global_step/sec: 3.6805
+2020-04-14 19:36:12,742 global_step/sec: 3.6805
+INFO:tensorflow:loss = 0.1835298, step = 9700 (27.172 sec)
+2020-04-14 19:36:12,746 loss = 0.1835298, step = 9700 (27.172 sec)
+INFO:tensorflow:global_step/sec: 3.71314
+2020-04-14 19:36:39,674 global_step/sec: 3.71314
+INFO:tensorflow:loss = 0.23115581, step = 9800 (26.929 sec)
+2020-04-14 19:36:39,675 loss = 0.23115581, step = 9800 (26.929 sec)
+INFO:tensorflow:Saving checkpoints for 9819 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:36:44,474 Saving checkpoints for 9819 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.16243
+2020-04-14 19:37:25,918 global_step/sec: 2.16243
+INFO:tensorflow:loss = 0.25480175, step = 9900 (46.244 sec)
+2020-04-14 19:37:25,919 loss = 0.25480175, step = 9900 (46.244 sec)
+INFO:tensorflow:global_step/sec: 3.7663
+2020-04-14 19:37:52,469 global_step/sec: 3.7663
+INFO:tensorflow:loss = 0.22138722, step = 10000 (26.551 sec)
+2020-04-14 19:37:52,470 loss = 0.22138722, step = 10000 (26.551 sec)
+INFO:tensorflow:global_step/sec: 3.69196
+2020-04-14 19:38:19,555 global_step/sec: 3.69196
+INFO:tensorflow:loss = 0.23602057, step = 10100 (27.089 sec)
+2020-04-14 19:38:19,559 loss = 0.23602057, step = 10100 (27.089 sec)
+INFO:tensorflow:global_step/sec: 3.67343
+2020-04-14 19:38:46,777 global_step/sec: 3.67343
+INFO:tensorflow:loss = 0.21909921, step = 10200 (27.220 sec)
+2020-04-14 19:38:46,779 loss = 0.21909921, step = 10200 (27.220 sec)
+INFO:tensorflow:global_step/sec: 3.69548
+2020-04-14 19:39:13,838 global_step/sec: 3.69548
+INFO:tensorflow:loss = 0.23943454, step = 10300 (27.060 sec)
+2020-04-14 19:39:13,839 loss = 0.23943454, step = 10300 (27.060 sec)
+INFO:tensorflow:global_step/sec: 3.75605
+2020-04-14 19:39:40,461 global_step/sec: 3.75605
+INFO:tensorflow:loss = 0.2483022, step = 10400 (26.624 sec)
+2020-04-14 19:39:40,462 loss = 0.2483022, step = 10400 (26.624 sec)
+INFO:tensorflow:global_step/sec: 3.63565
+2020-04-14 19:40:07,967 global_step/sec: 3.63565
+INFO:tensorflow:loss = 0.21689796, step = 10500 (27.506 sec)
+2020-04-14 19:40:07,969 loss = 0.21689796, step = 10500 (27.506 sec)
+INFO:tensorflow:global_step/sec: 3.57591
+2020-04-14 19:40:35,931 global_step/sec: 3.57591
+INFO:tensorflow:loss = 0.22273433, step = 10600 (27.966 sec)
+2020-04-14 19:40:35,934 loss = 0.22273433, step = 10600 (27.966 sec)
+INFO:tensorflow:global_step/sec: 3.49055
+2020-04-14 19:41:04,580 global_step/sec: 3.49055
+INFO:tensorflow:loss = 0.17997083, step = 10700 (28.649 sec)
+2020-04-14 19:41:04,583 loss = 0.17997083, step = 10700 (28.649 sec)
+INFO:tensorflow:global_step/sec: 3.52534
+2020-04-14 19:41:32,946 global_step/sec: 3.52534
+INFO:tensorflow:loss = 0.23379713, step = 10800 (28.365 sec)
+2020-04-14 19:41:32,947 loss = 0.23379713, step = 10800 (28.365 sec)
+INFO:tensorflow:global_step/sec: 3.6885
+2020-04-14 19:42:00,058 global_step/sec: 3.6885
+INFO:tensorflow:loss = 0.25634208, step = 10900 (27.111 sec)
+2020-04-14 19:42:00,059 loss = 0.25634208, step = 10900 (27.111 sec)
+INFO:tensorflow:global_step/sec: 3.5729
+2020-04-14 19:42:28,046 global_step/sec: 3.5729
+INFO:tensorflow:loss = 0.20010471, step = 11000 (27.988 sec)
+2020-04-14 19:42:28,047 loss = 0.20010471, step = 11000 (27.988 sec)
+INFO:tensorflow:global_step/sec: 3.57195
+2020-04-14 19:42:56,042 global_step/sec: 3.57195
+INFO:tensorflow:loss = 0.22076242, step = 11100 (27.999 sec)
+2020-04-14 19:42:56,046 loss = 0.22076242, step = 11100 (27.999 sec)
+INFO:tensorflow:global_step/sec: 3.50887
+2020-04-14 19:43:24,541 global_step/sec: 3.50887
+INFO:tensorflow:loss = 0.2515442, step = 11200 (28.497 sec)
+2020-04-14 19:43:24,544 loss = 0.2515442, step = 11200 (28.497 sec)
+INFO:tensorflow:global_step/sec: 3.59437
+2020-04-14 19:43:52,362 global_step/sec: 3.59437
+INFO:tensorflow:loss = 0.18975385, step = 11300 (27.821 sec)
+2020-04-14 19:43:52,364 loss = 0.18975385, step = 11300 (27.821 sec)
+INFO:tensorflow:global_step/sec: 3.63031
+2020-04-14 19:44:19,908 global_step/sec: 3.63031
+INFO:tensorflow:loss = 0.18845473, step = 11400 (27.545 sec)
+2020-04-14 19:44:19,909 loss = 0.18845473, step = 11400 (27.545 sec)
+INFO:tensorflow:global_step/sec: 3.70045
+2020-04-14 19:44:46,932 global_step/sec: 3.70045
+INFO:tensorflow:loss = 0.27091932, step = 11500 (27.024 sec)
+2020-04-14 19:44:46,933 loss = 0.27091932, step = 11500 (27.024 sec)
+INFO:tensorflow:global_step/sec: 3.63784
+2020-04-14 19:45:14,421 global_step/sec: 3.63784
+INFO:tensorflow:loss = 0.28267524, step = 11600 (27.490 sec)
+2020-04-14 19:45:14,423 loss = 0.28267524, step = 11600 (27.490 sec)
+INFO:tensorflow:global_step/sec: 3.71829
+2020-04-14 19:45:41,315 global_step/sec: 3.71829
+INFO:tensorflow:loss = 0.2308937, step = 11700 (26.894 sec)
+2020-04-14 19:45:41,317 loss = 0.2308937, step = 11700 (26.894 sec)
+INFO:tensorflow:global_step/sec: 3.45727
+2020-04-14 19:46:10,239 global_step/sec: 3.45727
+INFO:tensorflow:loss = 0.27420858, step = 11800 (28.923 sec)
+2020-04-14 19:46:10,241 loss = 0.27420858, step = 11800 (28.923 sec)
+INFO:tensorflow:global_step/sec: 3.57483
+2020-04-14 19:46:38,213 global_step/sec: 3.57483
+INFO:tensorflow:loss = 0.22449084, step = 11900 (27.976 sec)
+2020-04-14 19:46:38,216 loss = 0.22449084, step = 11900 (27.976 sec)
+INFO:tensorflow:Saving checkpoints for 11923 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:46:44,649 Saving checkpoints for 11923 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.12385
+2020-04-14 19:47:25,297 global_step/sec: 2.12385
+INFO:tensorflow:loss = 0.1884835, step = 12000 (47.083 sec)
+2020-04-14 19:47:25,299 loss = 0.1884835, step = 12000 (47.083 sec)
+INFO:tensorflow:global_step/sec: 3.61193
+2020-04-14 19:47:52,983 global_step/sec: 3.61193
+INFO:tensorflow:loss = 0.1899636, step = 12100 (27.685 sec)
+2020-04-14 19:47:52,985 loss = 0.1899636, step = 12100 (27.685 sec)
+INFO:tensorflow:global_step/sec: 3.52451
+2020-04-14 19:48:21,356 global_step/sec: 3.52451
+INFO:tensorflow:loss = 0.23138417, step = 12200 (28.373 sec)
+2020-04-14 19:48:21,357 loss = 0.23138417, step = 12200 (28.373 sec)
+INFO:tensorflow:global_step/sec: 3.57389
+2020-04-14 19:48:49,337 global_step/sec: 3.57389
+INFO:tensorflow:loss = 0.20884047, step = 12300 (27.982 sec)
+2020-04-14 19:48:49,339 loss = 0.20884047, step = 12300 (27.982 sec)
+INFO:tensorflow:global_step/sec: 3.42389
+2020-04-14 19:49:18,543 global_step/sec: 3.42389
+INFO:tensorflow:loss = 0.19308342, step = 12400 (29.206 sec)
+2020-04-14 19:49:18,545 loss = 0.19308342, step = 12400 (29.206 sec)
+INFO:tensorflow:global_step/sec: 3.59141
+2020-04-14 19:49:46,389 global_step/sec: 3.59141
+INFO:tensorflow:loss = 0.19814774, step = 12500 (27.846 sec)
+2020-04-14 19:49:46,392 loss = 0.19814774, step = 12500 (27.846 sec)
+INFO:tensorflow:global_step/sec: 3.53931
+2020-04-14 19:50:14,641 global_step/sec: 3.53931
+INFO:tensorflow:loss = 0.21149902, step = 12600 (28.252 sec)
+2020-04-14 19:50:14,643 loss = 0.21149902, step = 12600 (28.252 sec)
+INFO:tensorflow:global_step/sec: 3.60143
+2020-04-14 19:50:42,408 global_step/sec: 3.60143
+INFO:tensorflow:loss = 0.18373244, step = 12700 (27.766 sec)
+2020-04-14 19:50:42,410 loss = 0.18373244, step = 12700 (27.766 sec)
+INFO:tensorflow:global_step/sec: 3.5223
+2020-04-14 19:51:10,799 global_step/sec: 3.5223
+INFO:tensorflow:loss = 0.27767235, step = 12800 (28.391 sec)
+2020-04-14 19:51:10,800 loss = 0.27767235, step = 12800 (28.391 sec)
+INFO:tensorflow:global_step/sec: 3.62778
+2020-04-14 19:51:38,364 global_step/sec: 3.62778
+INFO:tensorflow:loss = 0.2188154, step = 12900 (27.565 sec)
+2020-04-14 19:51:38,365 loss = 0.2188154, step = 12900 (27.565 sec)
+INFO:tensorflow:global_step/sec: 3.51743
+2020-04-14 19:52:06,794 global_step/sec: 3.51743
+INFO:tensorflow:loss = 0.22734387, step = 13000 (28.431 sec)
+2020-04-14 19:52:06,797 loss = 0.22734387, step = 13000 (28.431 sec)
+INFO:tensorflow:global_step/sec: 3.66813
+2020-04-14 19:52:34,056 global_step/sec: 3.66813
+INFO:tensorflow:loss = 0.2135602, step = 13100 (27.262 sec)
+2020-04-14 19:52:34,059 loss = 0.2135602, step = 13100 (27.262 sec)
+INFO:tensorflow:global_step/sec: 3.5388
+2020-04-14 19:53:02,314 global_step/sec: 3.5388
+INFO:tensorflow:loss = 0.23695467, step = 13200 (28.257 sec)
+2020-04-14 19:53:02,316 loss = 0.23695467, step = 13200 (28.257 sec)
+INFO:tensorflow:global_step/sec: 3.58441
+2020-04-14 19:53:30,212 global_step/sec: 3.58441
+INFO:tensorflow:loss = 0.21596275, step = 13300 (27.898 sec)
+2020-04-14 19:53:30,214 loss = 0.21596275, step = 13300 (27.898 sec)
+INFO:tensorflow:global_step/sec: 3.61719
+2020-04-14 19:53:57,858 global_step/sec: 3.61719
+INFO:tensorflow:loss = 0.2114766, step = 13400 (27.646 sec)
+2020-04-14 19:53:57,860 loss = 0.2114766, step = 13400 (27.646 sec)
+INFO:tensorflow:global_step/sec: 3.54477
+2020-04-14 19:54:26,069 global_step/sec: 3.54477
+INFO:tensorflow:loss = 0.17793012, step = 13500 (28.211 sec)
+2020-04-14 19:54:26,071 loss = 0.17793012, step = 13500 (28.211 sec)
+INFO:tensorflow:global_step/sec: 3.59679
+2020-04-14 19:54:53,871 global_step/sec: 3.59679
+INFO:tensorflow:loss = 0.19500029, step = 13600 (27.802 sec)
+2020-04-14 19:54:53,873 loss = 0.19500029, step = 13600 (27.802 sec)
+INFO:tensorflow:global_step/sec: 3.63407
+2020-04-14 19:55:21,389 global_step/sec: 3.63407
+INFO:tensorflow:loss = 0.22596273, step = 13700 (27.517 sec)
+2020-04-14 19:55:21,390 loss = 0.22596273, step = 13700 (27.517 sec)
+INFO:tensorflow:global_step/sec: 3.65669
+2020-04-14 19:55:48,736 global_step/sec: 3.65669
+INFO:tensorflow:loss = 0.21583717, step = 13800 (27.347 sec)
+2020-04-14 19:55:48,737 loss = 0.21583717, step = 13800 (27.347 sec)
+INFO:tensorflow:global_step/sec: 3.53275
+2020-04-14 19:56:17,042 global_step/sec: 3.53275
+INFO:tensorflow:loss = 0.1797866, step = 13900 (28.307 sec)
+2020-04-14 19:56:17,044 loss = 0.1797866, step = 13900 (28.307 sec)
+INFO:tensorflow:global_step/sec: 3.62464
+2020-04-14 19:56:44,631 global_step/sec: 3.62464
+INFO:tensorflow:loss = 0.20004551, step = 14000 (27.590 sec)
+2020-04-14 19:56:44,634 loss = 0.20004551, step = 14000 (27.590 sec)
+INFO:tensorflow:Saving checkpoints for 14002 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 19:56:44,894 Saving checkpoints for 14002 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.0378
+2020-04-14 19:57:33,704 global_step/sec: 2.0378
+INFO:tensorflow:loss = 0.24695179, step = 14100 (49.071 sec)
+2020-04-14 19:57:33,705 loss = 0.24695179, step = 14100 (49.071 sec)
+INFO:tensorflow:global_step/sec: 3.56518
+2020-04-14 19:58:01,753 global_step/sec: 3.56518
+INFO:tensorflow:loss = 0.21436721, step = 14200 (28.049 sec)
+2020-04-14 19:58:01,754 loss = 0.21436721, step = 14200 (28.049 sec)
+INFO:tensorflow:global_step/sec: 3.19365
+2020-04-14 19:58:33,065 global_step/sec: 3.19365
+INFO:tensorflow:loss = 0.22270283, step = 14300 (31.313 sec)
+2020-04-14 19:58:33,067 loss = 0.22270283, step = 14300 (31.313 sec)
+INFO:tensorflow:global_step/sec: 3.27444
+2020-04-14 19:59:03,605 global_step/sec: 3.27444
+INFO:tensorflow:loss = 0.20330514, step = 14400 (30.541 sec)
+2020-04-14 19:59:03,608 loss = 0.20330514, step = 14400 (30.541 sec)
+INFO:tensorflow:global_step/sec: 3.40577
+2020-04-14 19:59:32,966 global_step/sec: 3.40577
+INFO:tensorflow:loss = 0.29986182, step = 14500 (29.360 sec)
+2020-04-14 19:59:32,968 loss = 0.29986182, step = 14500 (29.360 sec)
+INFO:tensorflow:global_step/sec: 3.33254
+2020-04-14 20:00:02,974 global_step/sec: 3.33254
+INFO:tensorflow:loss = 0.19362158, step = 14600 (30.007 sec)
+2020-04-14 20:00:02,975 loss = 0.19362158, step = 14600 (30.007 sec)
+INFO:tensorflow:global_step/sec: 3.54308
+2020-04-14 20:00:31,198 global_step/sec: 3.54308
+INFO:tensorflow:loss = 0.34884068, step = 14700 (28.224 sec)
+2020-04-14 20:00:31,199 loss = 0.34884068, step = 14700 (28.224 sec)
+INFO:tensorflow:Saving checkpoints for 14723 into dw_model_entertainment_live/model.ckpt.
+2020-04-14 20:00:36,327 Saving checkpoints for 14723 into dw_model_entertainment_live/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.2117141.
+2020-04-14 20:00:51,429 Loss for final step: 0.2117141.
+INFO:tensorflow:Calling model_fn.
+2020-04-14 20:00:53,722 Calling model_fn.
+WARNING:tensorflow:Trapezoidal rule is known to produce incorrect PR-AUCs; please switch to "careful_interpolation" instead.
+2020-04-14 20:01:23,320 Trapezoidal rule is known to produce incorrect PR-AUCs; please switch to "careful_interpolation" instead.
+WARNING:tensorflow:Trapezoidal rule is known to produce incorrect PR-AUCs; please switch to "careful_interpolation" instead.
+2020-04-14 20:01:23,368 Trapezoidal rule is known to produce incorrect PR-AUCs; please switch to "careful_interpolation" instead.
+INFO:tensorflow:Done calling model_fn.
+2020-04-14 20:01:23,477 Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2020-04-14-12:01:23
+2020-04-14 20:01:23,511 Starting evaluation at 2020-04-14-12:01:23
+INFO:tensorflow:Graph was finalized.
+2020-04-14 20:01:25,532 Graph was finalized.
+2020-04-14 20:01:25.533431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-04-14 20:01:25.533497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-14 20:01:25.533509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-04-14 20:01:25.533520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-04-14 20:01:25.534152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21544 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:0e:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from dw_model_entertainment_live/model.ckpt-14723
+2020-04-14 20:01:25,545 Restoring parameters from dw_model_entertainment_live/model.ckpt-14723
+INFO:tensorflow:Running local_init_op.
+2020-04-14 20:01:31,159 Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2020-04-14 20:01:31,605 Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2020-04-14-12:05:12
+2020-04-14 20:05:12,803 Finished evaluation at 2020-04-14-12:05:12
+INFO:tensorflow:Saving dict for global step 14723: accuracy = 0.92106783, accuracy_baseline = 0.9114618, auc = 0.8346185, auc_precision_recall = 0.44142258, average_loss = 0.22415663, global_step = 14723, label/mean = 0.08853821, loss = 0.22678825, precision = 0.62794554, prediction/mean = 0.09175413, recall = 0.26624417
+2020-04-14 20:05:12,803 Saving dict for global step 14723: accuracy = 0.92106783, accuracy_baseline = 0.9114618, auc = 0.8346185, auc_precision_recall = 0.44142258, average_loss = 0.22415663, global_step = 14723, label/mean = 0.08853821, loss = 0.22678825, precision = 0.62794554, prediction/mean = 0.09175413, recall = 0.26624417
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 14723: dw_model_entertainment_live/model.ckpt-14723
+2020-04-14 20:05:18,410 Saving 'checkpoint_path' summary for global step 14723: dw_model_entertainment_live/model.ckpt-14723
+2020-04-14 20:05:18,412 results...
+INFO:tensorflow:Calling model_fn.
+2020-04-14 20:05:18,908 Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+2020-04-14 20:05:46,623 Done calling model_fn.
+INFO:tensorflow:Signatures INCLUDED in export for Classify: ['serving_default', 'classification']
+2020-04-14 20:05:46,625 Signatures INCLUDED in export for Classify: ['serving_default', 'classification']
+INFO:tensorflow:Signatures INCLUDED in export for Regress: ['regression']
+2020-04-14 20:05:46,625 Signatures INCLUDED in export for Regress: ['regression']
+INFO:tensorflow:Signatures INCLUDED in export for Predict: ['predict']
+2020-04-14 20:05:46,625 Signatures INCLUDED in export for Predict: ['predict']
+INFO:tensorflow:Signatures INCLUDED in export for Train: None
+2020-04-14 20:05:46,625 Signatures INCLUDED in export for Train: None
+INFO:tensorflow:Signatures INCLUDED in export for Eval: None
+2020-04-14 20:05:46,625 Signatures INCLUDED in export for Eval: None
+2020-04-14 20:05:46.625799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2020-04-14 20:05:46.625860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-14 20:05:46.625874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2020-04-14 20:05:46.625890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2020-04-14 20:05:46.626486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21544 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:0e:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from dw_model_entertainment_live/model.ckpt-14723
+2020-04-14 20:05:48,068 Restoring parameters from dw_model_entertainment_live/model.ckpt-14723
+INFO:tensorflow:Assets added to graph.
+2020-04-14 20:05:50,022 Assets added to graph.
+INFO:tensorflow:No assets to write.
+2020-04-14 20:05:50,022 No assets to write.
+INFO:tensorflow:SavedModel written to: export_dir/temp-b'1586865918'/saved_model.pb
+2020-04-14 20:06:02,927 SavedModel written to: export_dir/temp-b'1586865918'/saved_model.pb
+label
+wt
+KC_104_1
+KC_104_2
+KC_104_3
+KC_104_4
+KC_104_5
+KC_104_6
+KC_104_7
+KC_104_8
+KC_50_1
+KC_50_2
+KC_50_3
+KC_50_4
+KC_50_5
+KU_51_1
+KU_51_2
+KU_51_3
+KU_51_4
+KU_51_5
+KU_51_6
+KU_51_7
+KU_51_8
+KU_51_9
+KI_52_1
+KI_52_2
+KI_52_3
+KI_52_4
+KI_52_5
+KI_52_6
+KI_52_7
+KI_52_8
+KI_52_9
+KI_53_1
+KI_53_2
+KI_53_3
+KI_53_4
+KI_53_5
+KI_53_6
+KI_53_7
+KI_53_8
+KI_53_9
+KI_53_10
+KI_53_11
+KI_53_12
+KI_54_1
+KI_54_2
+KI_54_3
+KI_54_4
+KI_54_5
+KI_54_6
+KI_54_7
+KI_54_8
+KI_54_9
+KI_54_10
+KI_54_11
+KI_54_12
+KC_56_1
+KC_56_2
+KC_56_3
+KC_56_4
+KC_56_5
+KC_56_6
+KC_56_7
+KC_56_8
+KC_57_1
+KC_57_2
+KC_57_3
+KC_57_4
+KC_57_5
+KC_57_6
+KC_57_7
+KC_57_8
+KI_55_1
+KI_55_2
+KI_55_3
+KI_55_4
+KI_55_5
+KI_55_6
+KI_55_7
+KI_55_8
+KI_55_9
+KI_55_10
+KI_55_11
+KI_55_12
+like_songs_cat
+touid_recent_sing_cat
+watch_uid_list_cat
+pay_uid_list_cat
+age_cat
+app_age_cat
+fjifen
+fans_num
+follow_num
+all_sum_days
+and_sum_days
+ios_sum_days
+pagerank
+publish_sum_days
+publish_day
+z_age_cat
+z_app_age_cat
+z_fjifen
+z_follow_num
+z_all_sum_days
+z_and_sum_days
+z_ios_sum_days
+z_pagerank
+z_publish_sum_days
+z_publish_day
+sex_cat
+app_sex_cat
+recent_province_id_cat
+recent_city_id_cat
+vip_ind_cat
+degree_cat
+and_login_user_type_cat
+ios_login_user_type_cat
+platform_last_cat
+mobile_type_last_cat
+z_sex_cat
+z_app_sex_cat
+z_all_login_user_type_cat
+z_and_login_user_type_cat
+z_ios_login_user_type_cat
+z_vip_ind_cat
+z_degree_cat
+z_recent_province_id_cat
+z_recent_city_id_cat
+z_platform_last_cat
+z_mobile_type_last_cat
+touid_cat
+uid_cat
+sex_x_zsex
+sex_x_zage_x_zsex
+age_x_zage
+age_x_zsex
+age_x_zage_x_zsex
+province_x_touid
+age_x_touid
+app_age_x_touid
+sex_x_touid
+app_sex_x_touid
+phone_x_touid
+age_x_sex_x_touid
+uid_x_age
+uid_x_zsex
+watch_uid_list_x_touid
+pay_uid_list_x_touid
+like_songs_x_touid_recent_sing
+KI_55_1_x_age
+KI_55_2_x_age
+KI_55_3_x_age
+KI_55_4_x_age
+KI_55_5_x_age
+KI_55_6_x_age
+KI_55_7_x_sex
+KI_55_8_x_sex
+KI_55_9_x_sex
+KI_55_10_x_sex
+KI_55_11_x_sex
+KI_55_12_x_sex
+shared_sex_emb
+shared_age_emb
+songid_emb
+recent_province_id_emb
+recent_city_id_emb
+touid_emb
+mobile_emb
+platform_emb
+accuracy: 0.92106783
+accuracy_baseline: 0.9114618
+auc: 0.8346185
+auc_precision_recall: 0.44142258
+average_loss: 0.22415663
+global_step: 14723
+label/mean: 0.08853821
+loss: 0.22678825
+precision: 0.62794554
+prediction/mean: 0.09175413
+recall: 0.26624417
+rec: ServingInputReceiver(features={'KI_61_1': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf66db38>, 'KU_58_1': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0aa293e2e8>, 'KU_59_1': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf6157f0>, 'and_login_user_type': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf6159b0>, 'app_sex': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf615b70>, 'degree': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf615d30>, 'ios_login_user_type': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf615ef0>, 'like_songs': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf615fd0>, 'mobile_type_last': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf6222b0>, 'platform_last': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622470>, 'recent_city_id': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622630>, 'recent_province_id': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf6227f0>, 'sex': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf6229b0>, 'touid': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622ba8>, 'uid': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622d68>, 'vip_ind': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622f28>, 'z_all_login_user_type': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf622978>, 'z_and_login_user_type': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a2e8>, 'z_app_sex': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a4a8>, 'z_degree': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a668>, 'z_ios_login_user_type': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a828>, 'z_mobile_type_last': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a9e8>, 'z_platform_last': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61aba8>, 'z_recent_city_id': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61ad68>, 'z_recent_province_id': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61af28>, 'z_sex': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61a9b0>, 'z_vip_ind': <tensorflow.python.framework.sparse_tensor.SparseTensor object at 0x7f0cdf61c2e8>, 'KC_104_1': <tf.Tensor 'ParseExample/ParseExample:81' shape=(?, 1) dtype=float32>, 'KC_104_2': <tf.Tensor 'ParseExample/ParseExample:82' shape=(?, 1) dtype=float32>, 'KC_104_3': <tf.Tensor 'ParseExample/ParseExample:83' shape=(?, 1) dtype=float32>, 'KC_104_4': <tf.Tensor 'ParseExample/ParseExample:84' shape=(?, 1) dtype=float32>, 'KC_104_5': <tf.Tensor 'ParseExample/ParseExample:85' shape=(?, 1) dtype=float32>, 'KC_104_6': <tf.Tensor 'ParseExample/ParseExample:86' shape=(?, 1) dtype=float32>, 'KC_104_7': <tf.Tensor 'ParseExample/ParseExample:87' shape=(?, 1) dtype=float32>, 'KC_104_8': <tf.Tensor 'ParseExample/ParseExample:88' shape=(?, 1) dtype=float32>, 'KC_50_1': <tf.Tensor 'ParseExample/ParseExample:89' shape=(?, 1) dtype=float32>, 'KC_50_2': <tf.Tensor 'ParseExample/ParseExample:90' shape=(?, 1) dtype=float32>, 'KC_50_3': <tf.Tensor 'ParseExample/ParseExample:91' shape=(?, 1) dtype=float32>, 'KC_50_4': <tf.Tensor 'ParseExample/ParseExample:92' shape=(?, 1) dtype=float32>, 'KC_50_5': <tf.Tensor 'ParseExample/ParseExample:93' shape=(?, 1) dtype=float32>, 'KC_56_1': <tf.Tensor 'ParseExample/ParseExample:94' shape=(?, 1) dtype=float32>, 'KC_56_2': <tf.Tensor 'ParseExample/ParseExample:95' shape=(?, 1) dtype=float32>, 'KC_56_3': <tf.Tensor 'ParseExample/ParseExample:96' shape=(?, 1) dtype=float32>, 'KC_56_4': <tf.Tensor 'ParseExample/ParseExample:97' shape=(?, 1) dtype=float32>, 'KC_56_5': <tf.Tensor 'ParseExample/ParseExample:98' shape=(?, 1) dtype=float32>, 'KC_56_6': <tf.Tensor 'ParseExample/ParseExample:99' shape=(?, 1) dtype=float32>, 'KC_56_7': <tf.Tensor 'ParseExample/ParseExample:100' shape=(?, 1) dtype=float32>, 'KC_56_8': <tf.Tensor 'ParseExample/ParseExample:101' shape=(?, 1) dtype=float32>, 'KC_57_1': <tf.Tensor 'ParseExample/ParseExample:102' shape=(?, 1) dtype=float32>, 'KC_57_2': <tf.Tensor 'ParseExample/ParseExample:103' shape=(?, 1) dtype=float32>, 'KC_57_3': <tf.Tensor 'ParseExample/ParseExample:104' shape=(?, 1) dtype=float32>, 'KC_57_4': <tf.Tensor 'ParseExample/ParseExample:105' shape=(?, 1) dtype=float32>, 'KC_57_5': <tf.Tensor 'ParseExample/ParseExample:106' shape=(?, 1) dtype=float32>, 'KC_57_6': <tf.Tensor 'ParseExample/ParseExample:107' shape=(?, 1) dtype=float32>, 'KC_57_7': <tf.Tensor 'ParseExample/ParseExample:108' shape=(?, 1) dtype=float32>, 'KC_57_8': <tf.Tensor 'ParseExample/ParseExample:109' shape=(?, 1) dtype=float32>, 'KI_52_1': <tf.Tensor 'ParseExample/ParseExample:110' shape=(?, 1) dtype=float32>, 'KI_52_2': <tf.Tensor 'ParseExample/ParseExample:111' shape=(?, 1) dtype=float32>, 'KI_52_3': <tf.Tensor 'ParseExample/ParseExample:112' shape=(?, 1) dtype=float32>, 'KI_52_4': <tf.Tensor 'ParseExample/ParseExample:113' shape=(?, 1) dtype=float32>, 'KI_52_5': <tf.Tensor 'ParseExample/ParseExample:114' shape=(?, 1) dtype=float32>, 'KI_52_6': <tf.Tensor 'ParseExample/ParseExample:115' shape=(?, 1) dtype=float32>, 'KI_52_7': <tf.Tensor 'ParseExample/ParseExample:116' shape=(?, 1) dtype=float32>, 'KI_52_8': <tf.Tensor 'ParseExample/ParseExample:117' shape=(?, 1) dtype=float32>, 'KI_52_9': <tf.Tensor 'ParseExample/ParseExample:118' shape=(?, 1) dtype=float32>, 'KI_53_1': <tf.Tensor 'ParseExample/ParseExample:119' shape=(?, 1) dtype=float32>, 'KI_53_10': <tf.Tensor 'ParseExample/ParseExample:120' shape=(?, 1) dtype=float32>, 'KI_53_11': <tf.Tensor 'ParseExample/ParseExample:121' shape=(?, 1) dtype=float32>, 'KI_53_12': <tf.Tensor 'ParseExample/ParseExample:122' shape=(?, 1) dtype=float32>, 'KI_53_2': <tf.Tensor 'ParseExample/ParseExample:123' shape=(?, 1) dtype=float32>, 'KI_53_3': <tf.Tensor 'ParseExample/ParseExample:124' shape=(?, 1) dtype=float32>, 'KI_53_4': <tf.Tensor 'ParseExample/ParseExample:125' shape=(?, 1) dtype=float32>, 'KI_53_5': <tf.Tensor 'ParseExample/ParseExample:126' shape=(?, 1) dtype=float32>, 'KI_53_6': <tf.Tensor 'ParseExample/ParseExample:127' shape=(?, 1) dtype=float32>, 'KI_53_7': <tf.Tensor 'ParseExample/ParseExample:128' shape=(?, 1) dtype=float32>, 'KI_53_8': <tf.Tensor 'ParseExample/ParseExample:129' shape=(?, 1) dtype=float32>, 'KI_53_9': <tf.Tensor 'ParseExample/ParseExample:130' shape=(?, 1) dtype=float32>, 'KI_54_1': <tf.Tensor 'ParseExample/ParseExample:131' shape=(?, 1) dtype=float32>, 'KI_54_10': <tf.Tensor 'ParseExample/ParseExample:132' shape=(?, 1) dtype=float32>, 'KI_54_11': <tf.Tensor 'ParseExample/ParseExample:133' shape=(?, 1) dtype=float32>, 'KI_54_12': <tf.Tensor 'ParseExample/ParseExample:134' shape=(?, 1) dtype=float32>, 'KI_54_2': <tf.Tensor 'ParseExample/ParseExample:135' shape=(?, 1) dtype=float32>, 'KI_54_3': <tf.Tensor 'ParseExample/ParseExample:136' shape=(?, 1) dtype=float32>, 'KI_54_4': <tf.Tensor 'ParseExample/ParseExample:137' shape=(?, 1) dtype=float32>, 'KI_54_5': <tf.Tensor 'ParseExample/ParseExample:138' shape=(?, 1) dtype=float32>, 'KI_54_6': <tf.Tensor 'ParseExample/ParseExample:139' shape=(?, 1) dtype=float32>, 'KI_54_7': <tf.Tensor 'ParseExample/ParseExample:140' shape=(?, 1) dtype=float32>, 'KI_54_8': <tf.Tensor 'ParseExample/ParseExample:141' shape=(?, 1) dtype=float32>, 'KI_54_9': <tf.Tensor 'ParseExample/ParseExample:142' shape=(?, 1) dtype=float32>, 'KI_55_1': <tf.Tensor 'ParseExample/ParseExample:143' shape=(?, 10) dtype=float32>, 'KI_55_10': <tf.Tensor 'ParseExample/ParseExample:144' shape=(?, 3) dtype=float32>, 'KI_55_11': <tf.Tensor 'ParseExample/ParseExample:145' shape=(?, 3) dtype=float32>, 'KI_55_12': <tf.Tensor 'ParseExample/ParseExample:146' shape=(?, 3) dtype=float32>, 'KI_55_2': <tf.Tensor 'ParseExample/ParseExample:147' shape=(?, 10) dtype=float32>, 'KI_55_3': <tf.Tensor 'ParseExample/ParseExample:148' shape=(?, 10) dtype=float32>, 'KI_55_4': <tf.Tensor 'ParseExample/ParseExample:149' shape=(?, 10) dtype=float32>, 'KI_55_5': <tf.Tensor 'ParseExample/ParseExample:150' shape=(?, 10) dtype=float32>, 'KI_55_6': <tf.Tensor 'ParseExample/ParseExample:151' shape=(?, 10) dtype=float32>, 'KI_55_7': <tf.Tensor 'ParseExample/ParseExample:152' shape=(?, 3) dtype=float32>, 'KI_55_8': <tf.Tensor 'ParseExample/ParseExample:153' shape=(?, 3) dtype=float32>, 'KI_55_9': <tf.Tensor 'ParseExample/ParseExample:154' shape=(?, 3) dtype=float32>, 'KU_51_1': <tf.Tensor 'ParseExample/ParseExample:155' shape=(?, 1) dtype=float32>, 'KU_51_2': <tf.Tensor 'ParseExample/ParseExample:156' shape=(?, 1) dtype=float32>, 'KU_51_3': <tf.Tensor 'ParseExample/ParseExample:157' shape=(?, 1) dtype=float32>, 'KU_51_4': <tf.Tensor 'ParseExample/ParseExample:158' shape=(?, 1) dtype=float32>, 'KU_51_5': <tf.Tensor 'ParseExample/ParseExample:159' shape=(?, 1) dtype=float32>, 'KU_51_6': <tf.Tensor 'ParseExample/ParseExample:160' shape=(?, 1) dtype=float32>, 'KU_51_7': <tf.Tensor 'ParseExample/ParseExample:161' shape=(?, 1) dtype=float32>, 'KU_51_8': <tf.Tensor 'ParseExample/ParseExample:162' shape=(?, 1) dtype=float32>, 'KU_51_9': <tf.Tensor 'ParseExample/ParseExample:163' shape=(?, 1) dtype=float32>, 'age': <tf.Tensor 'ParseExample/ParseExample:164' shape=(?, 1) dtype=float32>, 'all_sum_days': <tf.Tensor 'ParseExample/ParseExample:165' shape=(?, 1) dtype=float32>, 'and_sum_days': <tf.Tensor 'ParseExample/ParseExample:166' shape=(?, 1) dtype=float32>, 'app_age': <tf.Tensor 'ParseExample/ParseExample:167' shape=(?, 1) dtype=float32>, 'fans_num': <tf.Tensor 'ParseExample/ParseExample:168' shape=(?, 1) dtype=float32>, 'fjifen': <tf.Tensor 'ParseExample/ParseExample:169' shape=(?, 1) dtype=float32>, 'follow_num': <tf.Tensor 'ParseExample/ParseExample:170' shape=(?, 1) dtype=float32>, 'ios_sum_days': <tf.Tensor 'ParseExample/ParseExample:171' shape=(?, 1) dtype=float32>, 'label': <tf.Tensor 'ParseExample/ParseExample:172' shape=(?, 1) dtype=float32>, 'pagerank': <tf.Tensor 'ParseExample/ParseExample:173' shape=(?, 1) dtype=float32>, 'publish_day': <tf.Tensor 'ParseExample/ParseExample:174' shape=(?, 1) dtype=float32>, 'publish_sum_days': <tf.Tensor 'ParseExample/ParseExample:175' shape=(?, 1) dtype=float32>, 'wt': <tf.Tensor 'ParseExample/ParseExample:176' shape=(?, 1) dtype=float32>, 'z_age': <tf.Tensor 'ParseExample/ParseExample:177' shape=(?, 1) dtype=float32>, 'z_all_sum_days': <tf.Tensor 'ParseExample/ParseExample:178' shape=(?, 1) dtype=float32>, 'z_and_sum_days': <tf.Tensor 'ParseExample/ParseExample:179' shape=(?, 1) dtype=float32>, 'z_app_age': <tf.Tensor 'ParseExample/ParseExample:180' shape=(?, 1) dtype=float32>, 'z_fjifen': <tf.Tensor 'ParseExample/ParseExample:181' shape=(?, 1) dtype=float32>, 'z_follow_num': <tf.Tensor 'ParseExample/ParseExample:182' shape=(?, 1) dtype=float32>, 'z_ios_sum_days': <tf.Tensor 'ParseExample/ParseExample:183' shape=(?, 1) dtype=float32>, 'z_pagerank': <tf.Tensor 'ParseExample/ParseExample:184' shape=(?, 1) dtype=float32>, 'z_publish_day': <tf.Tensor 'ParseExample/ParseExample:185' shape=(?, 1) dtype=float32>, 'z_publish_sum_days': <tf.Tensor 'ParseExample/ParseExample:186' shape=(?, 1) dtype=float32>}, receiver_tensors={'examples': <tf.Tensor 'input:0' shape=(?,) dtype=string>}, receiver_tensors_alternatives=None)
